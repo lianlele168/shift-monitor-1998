@@ -1,0 +1,62 @@
+{
+  "features": [
+    {
+      "title": "4 Interactive CCTV Feeds",
+      "body": "The official page names Hallway, Storage, Office, and Generator rooms as the four active feeds."
+    },
+    {
+      "title": "Dynamic Anomaly System",
+      "body": "Random entity spawns and volatile signal feedback are the main threat loop."
+    },
+    {
+      "title": "Real-time Corruption Meter",
+      "body": "Purge anomalies quickly enough to avoid total system blackout."
+    },
+    {
+      "title": "Survival Chronometer",
+      "body": "The game tracks survival time, making clean camera rotation more important than panic clicking."
+    }
+  ],
+  "cameras": [
+    {
+      "id": "cam-01",
+      "name": "CAM 01 - Hallway",
+      "role": "Movement lane",
+      "checkRule": "Scan first in each loop because hallway changes are easy to miss when you tunnel on one room."
+    },
+    {
+      "id": "cam-02",
+      "name": "CAM 02 - Storage",
+      "role": "Object clutter",
+      "checkRule": "Look for shape displacement, unusual silhouettes, and signal distortion around shelves or corners."
+    },
+    {
+      "id": "cam-03",
+      "name": "CAM 03 - Office",
+      "role": "Close-detail feed",
+      "checkRule": "Use this feed as a reset point after purging, then return to a full camera cycle."
+    },
+    {
+      "id": "cam-04",
+      "name": "CAM 04 - Generator",
+      "role": "Failure pressure",
+      "checkRule": "Treat generator anomalies as high priority because the game frames blackout as the fail state."
+    }
+  ],
+  "controls": [
+    {
+      "input": "CAM 01 - 04",
+      "action": "Switch between CCTV camera feeds."
+    },
+    {
+      "input": "PURGE SIGNAL",
+      "action": "Isolate and clear anomalies on the currently active feed."
+    }
+  ],
+  "qualityRules": [
+    "This site does not copy the itch.io page into many thin pages.",
+    "Pages are limited to player intent: play, guide, cameras, anomalies, survival, and sources.",
+    "Unknown anomaly names, exact spawn rates, and hidden formulas are not invented.",
+    "The monitor planner is original utility content, not filler text."
+  ]
+}

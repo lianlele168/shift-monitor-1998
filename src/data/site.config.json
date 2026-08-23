@@ -1,0 +1,94 @@
+{
+  "game": {
+    "name": "SHIFT_MONITOR: 1998",
+    "slug": "shift-monitor-1998",
+    "developer": "Carl Dev",
+    "platform": "HTML5 / Browser",
+    "genre": "Simulation / Analog Horror",
+    "status": "Released",
+    "published": "2026-08-22",
+    "lastChecked": "2026-08-23",
+    "officialUrl": "https://carldupuy.itch.io/shift-monitor-1998",
+    "itchTagUrl": "https://itch.io/games/platform-web/tag-analog-horror"
+  },
+  "seo": {
+    "siteTitle": "SHIFT_MONITOR: 1998 Guide - Play, Cameras & Survival Tips",
+    "siteDescription": "Unofficial SHIFT_MONITOR: 1998 guide for the HTML5 analog horror browser game. Learn how to play, rotate CCTV feeds, purge anomalies, and survive longer.",
+    "baseUrl": "https://shiftmonitor1998.robloxwikihub.com",
+    "primaryKeywords": [
+      "SHIFT_MONITOR: 1998",
+      "SHIFT_MONITOR 1998 guide",
+      "SHIFT_MONITOR 1998 play",
+      "SHIFT_MONITOR 1998 itch.io"
+    ],
+    "secondaryKeywords": [
+      "SHIFT_MONITOR 1998 camera guide",
+      "SHIFT_MONITOR 1998 anomaly guide",
+      "SHIFT_MONITOR 1998 survival tips",
+      "analog horror browser game",
+      "VHS CCTV game"
+    ]
+  },
+  "routes": [
+    {
+      "path": "/",
+      "title": "SHIFT_MONITOR: 1998 Guide",
+      "priority": "1.0"
+    },
+    {
+      "path": "/play",
+      "title": "Play SHIFT_MONITOR: 1998",
+      "priority": "0.95"
+    },
+    {
+      "path": "/guide",
+      "title": "SHIFT_MONITOR: 1998 Guide",
+      "priority": "0.9"
+    },
+    {
+      "path": "/camera-guide",
+      "title": "Camera Guide",
+      "priority": "0.85"
+    },
+    {
+      "path": "/anomaly-guide",
+      "title": "Anomaly Guide",
+      "priority": "0.85"
+    },
+    {
+      "path": "/survival-tips",
+      "title": "Survival Tips",
+      "priority": "0.85"
+    },
+    {
+      "path": "/updates",
+      "title": "Updates & Sources",
+      "priority": "0.7"
+    },
+    {
+      "path": "/about",
+      "title": "About",
+      "priority": "0.3"
+    },
+    {
+      "path": "/terms",
+      "title": "Terms",
+      "priority": "0.25"
+    },
+    {
+      "path": "/privacy-policy",
+      "title": "Privacy Policy",
+      "priority": "0.2"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Official itch.io page",
+      "url": "https://carldupuy.itch.io/shift-monitor-1998"
+    },
+    {
+      "name": "itch.io analog-horror tag page",
+      "url": "https://itch.io/games/platform-web/tag-analog-horror"
+    }
+  ]
+}

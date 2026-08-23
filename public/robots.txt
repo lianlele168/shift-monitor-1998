@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shiftmonitor1998.robloxwikihub.com/sitemap.xml

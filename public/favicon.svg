@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SHIFT_MONITOR 1998">
+  <rect width="64" height="64" rx="10" fill="#050806"/>
+  <rect x="10" y="12" width="44" height="31" rx="4" fill="#07110b" stroke="#65fca6" stroke-width="3"/>
+  <path d="M16 22h32M16 29h18M16 36h27" stroke="#65fca6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M25 49h14M32 43v6" stroke="#f5c542" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="47" cy="19" r="3" fill="#ff4d5a"/>
+</svg>

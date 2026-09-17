@@ -8,7 +8,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "SHIFT_MONITOR: 1998 Updates & Sources",
   description: "Source log and quality-control notes for this unofficial SHIFT_MONITOR: 1998 HTML5 guide.",
-  alternates: { canonical: "/updates/" },
+  alternates: { canonical: "/updates" },
 };
 
 const faqs = [

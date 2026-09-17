@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, Lock, Eye, Mail, Scale, ExternalLink, CheckCircle2 } from "lucide-react";
-import config from "@/data/game.config.json";
+import config from "@/data/site.config.json";
 
 export const metadata: Metadata = {
   title: `Privacy Policy & Trust Center | ${config.game.name} Guide`,
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
-  alternates: { canonical: "/privacy-policy/" },
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy &amp; Trust Disclosures
           </h1>
           <p className="text-sm text-slate-300">
-            Last updated: {config.game.lastUpdated}. Unofficial fan guide and anomaly tracker for {config.game.name}.
+            Last updated: {config.game.lastChecked}. Unofficial fan guide and anomaly tracker for {config.game.name}.
           </p>
         </div>
 

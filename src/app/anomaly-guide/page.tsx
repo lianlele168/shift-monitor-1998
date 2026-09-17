@@ -7,7 +7,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "SHIFT_MONITOR: 1998 Anomaly Guide",
   description: "How to spot anomalies in SHIFT_MONITOR: 1998 without relying on fake spawn tables or unverified monster lists.",
-  alternates: { canonical: "/anomaly-guide/" },
+  alternates: { canonical: "/anomaly-guide" },
 };
 
 const sections = [

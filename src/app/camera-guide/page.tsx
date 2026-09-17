@@ -7,7 +7,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "SHIFT_MONITOR: 1998 Camera Guide",
   description: "Camera route guide for SHIFT_MONITOR: 1998, including Hallway, Storage, Office, Generator, and practical CCTV rotation timing.",
-  alternates: { canonical: "/camera-guide/" },
+  alternates: { canonical: "/camera-guide" },
 };
 
 const sections = [

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FileText, ShieldAlert, CheckCircle2, Scale, Mail, Gamepad2 } from "lucide-react";
-import config from "@/data/game.config.json";
+import config from "@/data/site.config.json";
 
 export const metadata: Metadata = {
   title: `Terms of Use & Guidelines | ${config.game.name} Guide`,
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     index: false,
     follow: true,
   },
-  alternates: { canonical: "/terms/" },
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
@@ -31,7 +31,7 @@ export default function TermsPage() {
             Terms of Use &amp; Service Guidelines
           </h1>
           <p className="text-sm text-slate-300">
-            Last updated: {config.game.lastUpdated}. Unofficial strategy and survival companion for {config.game.name}.
+            Last updated: {config.game.lastChecked}. Unofficial strategy and survival companion for {config.game.name}.
           </p>
         </div>
 

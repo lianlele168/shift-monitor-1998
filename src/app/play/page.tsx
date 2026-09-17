@@ -7,7 +7,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Play SHIFT_MONITOR: 1998 Online",
   description: "Where to play SHIFT_MONITOR: 1998, what to check before starting, and how to use the official itch.io browser version safely.",
-  alternates: { canonical: "/play/" },
+  alternates: { canonical: "/play" },
 };
 
 const sections = [

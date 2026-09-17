@@ -7,7 +7,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "SHIFT_MONITOR: 1998 Beginner Guide",
   description: "A beginner guide for SHIFT_MONITOR: 1998 covering objective, controls, camera flow, purge timing, and first survival route.",
-  alternates: { canonical: "/guide/" },
+  alternates: { canonical: "/guide" },
 };
 
 const sections = [

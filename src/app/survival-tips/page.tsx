@@ -8,7 +8,7 @@ import { absoluteUrl, buildBreadcrumbSchema, buildFAQSchema } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "SHIFT_MONITOR: 1998 Survival Tips",
   description: "Survive longer in SHIFT_MONITOR: 1998 with camera cycle timing, purge discipline, missed-check recovery, and an interactive CCTV planner.",
-  alternates: { canonical: "/survival-tips/" },
+  alternates: { canonical: "/survival-tips" },
 };
 
 const sections = [

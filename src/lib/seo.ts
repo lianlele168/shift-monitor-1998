@@ -52,9 +52,9 @@ export function buildVideoGameSchema() {
     about: {
       "@type": "VideoGame",
       name: config.game.name,
-      url: config.game.robloxUrl ?? `https://www.roblox.com/games/${config.game.robloxId}`,
+      url: config.game.officialUrl,
       applicationCategory: "Game",
-      gamePlatform: "Roblox",
+      gamePlatform: config.game.platform,
       genre: config.game.genre,
       publisher: {
         "@type": "Organization",

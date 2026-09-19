@@ -75,7 +75,7 @@ export default function Footer() {
 
         <div className="mt-9 border-t border-green-300/15 pt-6 text-xs">
           &copy; {new Date().getFullYear()} {config.game.name} Guide. Unofficial HTML5 game companion.
-          <p className="mt-1 text-green-100/40">Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail.com</p>
+          <p className="mt-1 text-green-100/40">Reviewed by Hlele · Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail.com</p>
         </div>
       </div>
     </footer>

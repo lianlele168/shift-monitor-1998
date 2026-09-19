@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-green-300/40 bg-black/70 px-4 py-1.5 font-mono text-xs font-black uppercase tracking-wide text-green-100">
               <Monitor className="h-4 w-4 text-green-300" />
-              HTML5 browser game - checked {config.game.lastChecked}
+              HTML5 browser game
             </div>
             <h1 className="mb-5 font-mono text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
               SHIFT_MONITOR: 1998 Guide

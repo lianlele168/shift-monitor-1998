@@ -37,7 +37,7 @@ export default function Footer() {
               Unofficial guide for {config.game.name}. Built as a compact HTML5 game experiment with source tracking, original strategy notes, and a monitor planner.
             </p>
             <div className="mt-4 inline-flex rounded-full border border-green-300/15 bg-white/5 px-3 py-1 font-mono text-[11px] text-green-200">
-              Checked {config.game.lastChecked}
+              Verified against official sources
             </div>
           </div>
 

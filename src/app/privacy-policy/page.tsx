@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy &amp; Trust Disclosures
           </h1>
           <p className="text-sm text-slate-300">
-            Last updated: {config.game.lastChecked}. Unofficial fan guide and anomaly tracker for {config.game.name}.
+            Unofficial fan guide and anomaly tracker for {config.game.name}.
           </p>
         </div>
 

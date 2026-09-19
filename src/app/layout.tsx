@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   description: config.seo.siteDescription,
   keywords: [...config.seo.primaryKeywords, ...config.seo.secondaryKeywords],
-  authors: [{ name: `${config.game.name} Guide` }],
+  authors: [{ name: "Hlele" }],
   openGraph: {
     type: "website",
     siteName: `${config.game.name} Guide`,

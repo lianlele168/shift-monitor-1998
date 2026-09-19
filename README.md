@@ -1,5 +1,7 @@
 # SHIFT_MONITOR: 1998 Guide
 
+> 🎮 **Live site:** [https://shiftmonitor1998.robloxwikihub.com](https://shiftmonitor1998.robloxwikihub.com) — interactive calculators, verified code lists, tier lists & guides.
+
 Unofficial compact guide site for the HTML5 browser game SHIFT_MONITOR: 1998.
 
 ## Pages

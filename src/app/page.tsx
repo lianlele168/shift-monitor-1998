@@ -185,6 +185,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <section className="page-shell py-6 text-[11px] text-slate-500">
+        <p>Reviewed by Hlele · Content AI-assisted, human-reviewed · Data sources cited on page · Contact: lianlele168@gmail.com</p>
+      </section>
     </>
   );
 }

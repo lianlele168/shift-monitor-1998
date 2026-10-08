@@ -4,15 +4,12 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Activity,
-  Camera,
   ChevronRight,
   ExternalLink,
   FileText,
   Menu,
   Monitor,
   Play,
-  Radar,
   Search,
   ShieldAlert,
   X,
@@ -20,22 +17,9 @@ import {
 import config from "@/data/site.config.json";
 import gameplay from "@/data/gameplay.json";
 
-const navItems = [
-  { href: "/play", label: "Play", icon: Play },
-  { href: "/guide", label: "Guide", icon: FileText },
-  { href: "/camera-guide", label: "Cameras", icon: Camera },
-  { href: "/anomaly-guide", label: "Anomalies", icon: Radar },
-  { href: "/survival-tips", label: "Survival", icon: Activity },
-];
+const navItems = [{href:"/play/",label:"Play",icon:Play},{href:"/guide/",label:"Controls & purge",icon:FileText},{href:"/updates/",label:"Sources",icon:Monitor}];
 
-const staticSearchItems = [
-  { title: "Play SHIFT_MONITOR: 1998", detail: "Official itch.io play link and pre-shift checklist", href: "/play", type: "Play" },
-  { title: "Beginner Guide", detail: "Game objective, controls, purge loop, and first run plan", href: "/guide", type: "Guide" },
-  { title: "Camera Guide", detail: "Hallway, Storage, Office, and Generator rotation notes", href: "/camera-guide", type: "Guide" },
-  { title: "Anomaly Guide", detail: "How to inspect feeds without inventing hidden spawn tables", href: "/anomaly-guide", type: "Guide" },
-  { title: "Survival Tips", detail: "Cycle timing, purge windows, and corruption pressure", href: "/survival-tips", type: "Tips" },
-  { title: "Updates", detail: "Sources and quality-control notes", href: "/updates", type: "Log" },
-];
+const staticSearchItems = [{title:"Play the official game",detail:"Carl Dev’s itch.io page",href:"/play/",type:"Play"},{title:"Camera controls and persistent warning",detail:"Find the visible anomaly before using purge",href:"/guide/",type:"Guide"},{title:"Sources and browser observations",detail:"What was checked on 8 October 2026",href:"/updates/",type:"Sources"}];
 
 export default function Header() {
   const pathname = usePathname();
@@ -68,7 +52,7 @@ export default function Header() {
       .map((item) => ({
         title: item.name,
         detail: item.checkRule,
-        href: "/camera-guide",
+        href: "/guide/",
         type: "Camera",
       }));
 

@@ -28,7 +28,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-outfit)", "Inter", "sans-serif"],
+        sans: ["var(--font-inter)", "Arial", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
       boxShadow: {
@@ -42,4 +42,3 @@ const config: Config = {
   plugins: [],
 };
 export default config;
-

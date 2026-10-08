@@ -1,0 +1,77 @@
+{
+  "path": "/updates/",
+  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
+  "checkedAt": "2026-10-08T16:31:38.918Z",
+  "testedUrl": "http://127.0.0.1:56604/updates/",
+  "httpStatus": 200,
+  "canonical": "https://shiftmonitor1998.robloxwikihub.com/updates/",
+  "robotsAllowed": true,
+  "indexAllowed": false,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://carldupuy.itch.io/shift-monitor-1998",
+    "https://html-classic.itch.zone/html/18906721/SHIFT_MONITOR%201998/index.html?v=1787394666"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-390.png",
+        "sha256": "c6b4b2a3d518ed0df8205a173c7ee282ea5d34fe9c3120564d2432ac8b03f4db"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-768.png",
+        "sha256": "488ffdb39bfcb0570aa7143b5b46bd91b241ce67eb6b39c322dd1049b4d02902"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-1024.png",
+        "sha256": "9f74fc898b13f6e7b6022eafe6efab7ed89fa4ea835eb66c7979e6ce18211026"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/updates-1440.png",
+        "sha256": "6b45f4f7f167665d3508204182f0f699eb870f9029a7224113f80b8f5a0847e3"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Readability: separate independent review and final shared-font correction. Interaction: shared Header plus guide manual checklist, actual four-width tests; no game behavior inferred from local preview."
+}

@@ -1,0 +1,6 @@
+Home
+Survival advice corrected
+
+The camera controls and observed warning behavior are now explained together in the guide below. Earlier unsupported camera priorities and survival predictions have been removed.
+
+Read the controls and purge guide

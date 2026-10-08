@@ -1,0 +1,76 @@
+{
+  "path": "/survival-tips/",
+  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
+  "checkedAt": "2026-10-08T16:31:36.704Z",
+  "testedUrl": "http://127.0.0.1:56604/survival-tips/",
+  "httpStatus": 200,
+  "canonical": "https://shiftmonitor1998.robloxwikihub.com/survival-tips/",
+  "robotsAllowed": true,
+  "indexAllowed": false,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://carldupuy.itch.io/shift-monitor-1998"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/survival-tips-390.png",
+        "sha256": "e9aa48ce34577e889cfa635d4c0b7f8abcf97c9a0eedffb3d314d87d0bb9088f"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/survival-tips-768.png",
+        "sha256": "7ece0ce85491e86a36d8dbbe56c52e1b42de68bf7001a4b06a449c5eb942afe9"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/survival-tips-1024.png",
+        "sha256": "b32f1b3333d66056e66304e6831e6234078e9c32c0d7538391612fa5cf7556e0"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/survival-tips-1440.png",
+        "sha256": "28196dc40342f3eff9934ca342b20659828fce19e8fa3eeaebd7936bd69a7edc"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Readability: separate independent review and final shared-font correction. Interaction: shared Header plus guide manual checklist, actual four-width tests; no game behavior inferred from local preview."
+}

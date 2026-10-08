@@ -1,0 +1,597 @@
+{
+  "schemaVersion": 1,
+  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
+  "site": {
+    "baseUrl": "https://shiftmonitor1998.robloxwikihub.com",
+    "officialUrl": "https://carldupuy.itch.io/shift-monitor-1998",
+    "platform": "html5",
+    "releaseStatus": "released",
+    "identitySourceId": "itch",
+    "identityReview": {
+      "status": "supported",
+      "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+      "reviewedAt": "2026-10-08T16:32:27.091Z",
+      "artifact": {
+        "path": "quality/content-review.md",
+        "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "itch",
+      "kind": "official",
+      "url": "https://carldupuy.itch.io/shift-monitor-1998",
+      "checkedAt": "2026-10-08T15:23:20.640Z",
+      "artifact": {
+        "path": "quality/artifacts/sources/itch.html",
+        "sha256": "85193e22ce23d91deef17976d3c794db01fabfbafefec899223ffadeded42d8a"
+      }
+    },
+    {
+      "id": "game-code",
+      "kind": "official",
+      "url": "https://html-classic.itch.zone/html/18906721/SHIFT_MONITOR%201998/index.html?v=1787394666",
+      "checkedAt": "2026-10-08T15:51:50.394616+00:00",
+      "artifact": {
+        "path": "quality/artifacts/sources/official-game.html",
+        "sha256": "a03a2e161c06cce0abefdf88b4f9062f23d0cd243f0c65dd66496c75b6afa165"
+      }
+    },
+    {
+      "id": "game-observation",
+      "kind": "observation",
+      "url": "https://html-classic.itch.zone/html/18906721/SHIFT_MONITOR%201998/index.html?v=1787394666",
+      "checkedAt": "2026-10-08T15:53:22.995Z",
+      "artifact": {
+        "path": "quality/artifacts/sources/game-observation.json",
+        "sha256": "0ecf0ae86bd783d41602bd8dbf8b052c9eeb1279de26073444a2071e6e11a7c8"
+      }
+    },
+    {
+      "id": "app",
+      "kind": "observation",
+      "url": "https://shiftmonitor1998.robloxwikihub.com",
+      "checkedAt": "2026-10-08T16:32:27.091Z",
+      "artifact": {
+        "path": "quality/artifacts/application-source.txt",
+        "sha256": "c083b547e8c90f54b1f19bf78e6fd8c618017df1c1985ee05f51ff92a8f60679"
+      }
+    },
+    {
+      "id": "interactions",
+      "kind": "observation",
+      "url": "https://shiftmonitor1998.robloxwikihub.com",
+      "checkedAt": "2026-10-08T16:32:26.786Z",
+      "artifact": {
+        "path": "quality/artifacts/interactions.json",
+        "sha256": "4235928ffc6f28b91b4df779642a3290d1e850bcdb8456f03c69c3cf20ec0c80"
+      }
+    },
+    {
+      "id": "old-planner",
+      "kind": "observation",
+      "url": "https://github.com/lianlele168/shift-monitor-1998",
+      "checkedAt": "2026-10-08T16:32:27.091Z",
+      "artifact": {
+        "path": "quality/artifacts/previous-planner.txt",
+        "sha256": "df0d55e19d0061556b229d66e3e7d1ff492d3c157b05feac720ce5c50a416a55"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "kind": "fact",
+      "statement": "SHIFT_MONITOR: 1998 is Carl Dev’s released HTML5 browser game.",
+      "sourceIds": [
+        "itch"
+      ],
+      "support": "Official title/author and More information Status/Platforms, browser iframe.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "camera-labels",
+      "kind": "number",
+      "statement": "Four cameras: Main Hallway, Storage Room, Security Office, Generator Bay.",
+      "sourceIds": [
+        "game-code",
+        "game-observation"
+      ],
+      "support": "camNames and switchCam in captured script; actual cam1–4 labels in observation steps.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "warning",
+      "kind": "fact",
+      "statement": "Warning may persist on an unaffected feed; identify the visible anomaly.",
+      "sourceIds": [
+        "game-code",
+        "game-observation"
+      ],
+      "support": "updateEntityVisibility only resets status when anomalyCam is zero; observation changes away while warning remains.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "purge",
+      "kind": "fact",
+      "statement": "Purge clears the anomaly only on its active camera, reduces corruption and updates visibility; a later anomaly may appear.",
+      "sourceIds": [
+        "game-code"
+      ],
+      "support": "purgeAnomaly conditional, corruption reduction, updateEntityVisibility and the game interval/spawnAnomaly. No invented numerical rates exposed.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "observed-sequence",
+      "kind": "verification",
+      "statement": "Automated browser observed a natural anomaly on CAM02, switched away, returned, purged, and saw stable status.",
+      "sourceIds": [
+        "game-observation"
+      ],
+      "support": "Complete passed observation steps and game-anomaly.png/game-stable.png from that sequence; no injected game state.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "observation-date",
+      "kind": "date",
+      "statement": "Game observation and its screenshot were captured 8 October 2026 UTC.",
+      "sourceIds": [
+        "game-observation"
+      ],
+      "support": "checkedAt timestamp, capturedScreenshot and test script records; not a patch/publication date.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "app-behavior",
+      "kind": "fact",
+      "statement": "Manual camera checklist stores marks in current page memory only; reset/reload clears marks, search is local, no game integration.",
+      "sourceIds": [
+        "app",
+        "interactions"
+      ],
+      "support": "MonitorPlanner useState and reset; Header useMemo; four-width executed interaction checks.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "review-scope",
+      "kind": "verification",
+      "statement": "Codex source/browser review and AI-assisted writing; Hlele is site owner, no owner playtest is claimed.",
+      "sourceIds": [
+        "app",
+        "game-observation"
+      ],
+      "support": "Footer/layout attribution against workspace identity instruction; source and execution log with stated limits.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    },
+    {
+      "id": "corrections",
+      "kind": "verification",
+      "statement": "Invented risk score and safe window have been removed; legacy routes link to the consolidated guide.",
+      "sourceIds": [
+        "old-planner",
+        "app"
+      ],
+      "support": "Historical planner risk/safePurgeWindow formulas versus current simple checklist and recorded route review.",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "status": "ready",
+      "intent": "Find the official game and the guide",
+      "uniqueValue": "Specific camera-warning pitfall with an actual observation screenshot",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "camera-labels",
+        "warning",
+        "purge",
+        "observed-sequence",
+        "observation-date"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/home.html",
+        "sha256": "02c1517463983c0b25c547e47438b5c41ebc8734feba282b740f229f1e6cef19"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/home-technical.json",
+        "sha256": "20e47651be95a5aa2248a2c8dfbef92b1f968ae4c63a50446ddbd6e5e0e221f2"
+      }
+    },
+    {
+      "path": "/about/",
+      "status": "ready",
+      "intent": "Understand site ownership",
+      "uniqueValue": "Independent publisher and AI/browser review disclosure",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/about.html",
+        "sha256": "57769aafcf67836b4bd0112dbb2fd78c96bef322d3c7326e61a502d37cd61bca"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/about-technical.json",
+        "sha256": "87af7830b608cb5f519b999e967cb2247088001871b12d4541fc8036bd860418"
+      }
+    },
+    {
+      "path": "/anomaly-guide/",
+      "status": "ready",
+      "intent": "Recover an old anomaly-guide link",
+      "uniqueValue": "Explicit correction and consolidated guide destination",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "corrections"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/anomaly-guide.html",
+        "sha256": "b27f8fe5d6cc2758067c4973af7d818735c2ac4237e3a8cab7060775d023c05e"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/anomaly-guide-technical.json",
+        "sha256": "7db014e6d497fa311260f3c69276a8215ee03284a67c15b0b8149b9d51a0b155"
+      }
+    },
+    {
+      "path": "/camera-guide/",
+      "status": "ready",
+      "intent": "Recover an old camera-guide link",
+      "uniqueValue": "Explicit correction and consolidated guide destination",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "corrections"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/camera-guide.html",
+        "sha256": "3b31605c7c1ac070db0c5c72e7ecf9ee6330c78f59c3a70527f843aaa05b960c"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/camera-guide-technical.json",
+        "sha256": "add5f5d497d2b729f1fa04e9c2617b061b3e6b4563be63ec89860c5617f92da2"
+      }
+    },
+    {
+      "path": "/guide/",
+      "status": "ready",
+      "intent": "Resolve confusion about camera switching and purge",
+      "uniqueValue": "Reproducible warning persistence sequence and optional manual checklist",
+      "indexable": true,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "camera-labels",
+        "warning",
+        "purge",
+        "observed-sequence",
+        "observation-date",
+        "app-behavior"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/guide.html",
+        "sha256": "b8589a3b4b4eb353ab8812475593e13a97f58a88e1dc5e7f984b1f2d64166d28"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/guide-technical.json",
+        "sha256": "0eb52fd4a697b8dd8d4b41e639fbd5088fa9562287b05e96e506a2b52a783897"
+      }
+    },
+    {
+      "path": "/play/",
+      "status": "ready",
+      "intent": "Open the current official game",
+      "uniqueValue": "Stable official destination, clearly no game mirror",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/play.html",
+        "sha256": "a79ec4b5fccb5e6e3288aaad29be3066d4923233d7fe23e841fdcf8caaa829a3"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/play-technical.json",
+        "sha256": "ee04fa434e233d0467c9c4a5abbaf42671b4ee7a40c04c226901d2706e9d8130"
+      }
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": "ready",
+      "intent": "Understand data behavior",
+      "uniqueValue": "Actual in-memory checklist and outbound-service behavior",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "app-behavior"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/privacy-policy.html",
+        "sha256": "8a61e262e2d6ace468370d1867edad2143b9f9757a2f546a3b143e975677d036"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/privacy-policy-technical.json",
+        "sha256": "d2c806a2baabf7bd34c91a09f7bbc927073ef502ca286b351abf28527ce6341c"
+      }
+    },
+    {
+      "path": "/survival-tips/",
+      "status": "ready",
+      "intent": "Recover old survival advice",
+      "uniqueValue": "Withdrawal of unverified predictions and useful guide link",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "corrections"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/survival-tips.html",
+        "sha256": "f3465c81a47e4502a8eb1f22830dfbdb42819607c64176c201394981b93e502f"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/survival-tips-technical.json",
+        "sha256": "6b21619762c24debc4f1602bf5cb87a1c9e92dd59aaf50c555dc0629874e2fb3"
+      }
+    },
+    {
+      "path": "/terms/",
+      "status": "ready",
+      "intent": "Understand reference scope",
+      "uniqueValue": "Version limitations and ownership/contact",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "app-behavior"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/terms.html",
+        "sha256": "6627c0c4ee2f48341e84bcc42ad0af407736cdc10e263f1f20134c453b3c2bdd"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/terms-technical.json",
+        "sha256": "31419acc6da607a1dbdf80502787783b9131a31beb27dd7e905be12461309f73"
+      }
+    },
+    {
+      "path": "/updates/",
+      "status": "ready",
+      "intent": "Inspect evidence and corrections",
+      "uniqueValue": "Exact build, observed sequence and review limits",
+      "indexable": false,
+      "claimIds": [
+        "identity",
+        "review-scope",
+        "camera-labels",
+        "warning",
+        "purge",
+        "observed-sequence",
+        "observation-date",
+        "corrections"
+      ],
+      "claimCoverage": "complete",
+      "crossPageConsistency": "passed",
+      "review": {
+        "status": "supported",
+        "reviewer": "Codex root; independent review: /root/autonomous_workflow",
+        "reviewedAt": "2026-10-08T16:32:27.091Z",
+        "artifact": {
+          "path": "quality/content-review.md",
+          "sha256": "ed031c557b7cf7eea63b11add17111d9aa16f2b2d8e78cc4ad57af4fafc054ba"
+        }
+      },
+      "renderedArtifact": {
+        "path": "quality/artifacts/updates.html",
+        "sha256": "0a8e7e72b015a115ebb5435ef5b9da96960fc89ba4446bd52c786dbcd23c16a6"
+      },
+      "technicalArtifact": {
+        "path": "quality/artifacts/updates-technical.json",
+        "sha256": "31abe560d446324b24c3e62be59d4c033b35c03ad4f606544b0a47aaab8d6c35"
+      }
+    }
+  ],
+  "routeInventoryArtifact": {
+    "path": "quality/artifacts/routes.json",
+    "sha256": "34739f63d6ca95b2b40af38c4d055106b194bca738be50c8dfa83359b7f502b1"
+  },
+  "sitemapPaths": [
+    "/",
+    "/guide/"
+  ],
+  "sitemapArtifact": {
+    "path": "quality/artifacts/sitemap.xml",
+    "sha256": "e0776cc1f673818e5d4b7bab7d6f7d1aabefa0ce928cc38cae3b2b84ed22ebae"
+  },
+  "skillRunArtifact": {
+    "path": "quality/skill-run.md",
+    "sha256": "d0331d9a00b2ae7a1f372e8c2823527071760284c53f62d0827e30ea1dd64e25"
+  },
+  "buildArtifact": {
+    "path": "quality/artifacts/build.log",
+    "sha256": "9737901fa526c20cbab9c08cfc18bdebf4af38214497a87ce9386f7f0fc661cd"
+  },
+  "buildStatus": "passed",
+  "unresolved": []
+}

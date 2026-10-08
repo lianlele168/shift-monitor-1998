@@ -1,0 +1,19 @@
+Home
+Sources and browser observations
+Checked on 8 October 2026
+
+Carl Dev’s official itch.io page identifies the game as a released HTML5 game and describes four CCTV feeds and purging corrupted frequencies.
+
+The browser build linked by that page was build 18906721. Its supplied source identifies the camera labels and the selected-camera check in the purge action.
+
+What the browser agent actually did
+
+The agent opened the developer’s build, selected CAM 01–04, waited for an anomaly to appear naturally, switched away, returned to the affected camera and clicked PURGE SIGNAL. The warning persisted on the other feed; a successful purge removed the entity and changed the status to SIGNAL: STABLE. No game state was injected for this observation.
+
+The observation covers this sequence and this build. It does not verify an optimal strategy, long-run survival, mobile play or future updates. Game screenshots on this site were captured during that check; the game and its visuals belong to Carl Dev.
+
+Content correction
+
+Earlier versions of this companion included an invented risk score and safe-purge-window planner. Those predictions have been removed. Separate camera, anomaly and survival pages now point to the consolidated controls guide.
+
+Site owner: Hlele. Research, source comparison and browser observation: Codex agent. This log does not attribute playtesting or approval to the owner.

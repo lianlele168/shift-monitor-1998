@@ -1,0 +1,76 @@
+{
+  "path": "/camera-guide/",
+  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
+  "checkedAt": "2026-10-08T16:31:31.972Z",
+  "testedUrl": "http://127.0.0.1:56604/camera-guide/",
+  "httpStatus": 200,
+  "canonical": "https://shiftmonitor1998.robloxwikihub.com/camera-guide/",
+  "robotsAllowed": true,
+  "indexAllowed": false,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://carldupuy.itch.io/shift-monitor-1998"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/camera-guide-390.png",
+        "sha256": "d94d4b112d1a18426f991b834bf2d221ee19e9c535f6902dd8944118b159192b"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/camera-guide-768.png",
+        "sha256": "d4c7d67796832be691b1c9b7815e967ddcba33167131e3464b5484867788afb4"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/camera-guide-1024.png",
+        "sha256": "08548ea7930215955ee7019bb93328cd572a506ae68105a9e28eeddf1b6972c4"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/camera-guide-1440.png",
+        "sha256": "4f8115ff8ec148a79c180ed05663889ec9741d45d6432095205df67cf5138580"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Readability: separate independent review and final shared-font correction. Interaction: shared Header plus guide manual checklist, actual four-width tests; no game behavior inferred from local preview."
+}

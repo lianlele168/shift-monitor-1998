@@ -1,0 +1,39 @@
+{
+  "url": "https://html-classic.itch.zone/html/18906721/SHIFT_MONITOR%201998/index.html?v=1787394666",
+  "checkedAt": "2026-10-08T15:53:22.995Z",
+  "scope": "Natural UI actions on the developer-linked live HTML build, no game state injection.",
+  "observations": [
+    {
+      "action": "click CAM 1",
+      "label": "CAM_01: MAIN HALLWAY"
+    },
+    {
+      "action": "click CAM 2",
+      "label": "CAM_02: STORAGE ROOM"
+    },
+    {
+      "action": "click CAM 3",
+      "label": "CAM_03: SECURITY OFFICE"
+    },
+    {
+      "action": "click CAM 4",
+      "label": "CAM_04: GENERATOR BAY"
+    },
+    {
+      "action": "find natural anomaly, change feed, return and purge",
+      "cam": 2,
+      "before": "WARNING: ANOMALY DETECTED",
+      "other": {
+        "entityVisible": false,
+        "text": "WARNING: ANOMALY DETECTED"
+      },
+      "after": {
+        "entityVisible": false,
+        "text": "SIGNAL: STABLE"
+      }
+    }
+  ],
+  "errors": [],
+  "status": 200,
+  "completed": true
+}

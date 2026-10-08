@@ -1,0 +1,76 @@
+{
+  "path": "/",
+  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
+  "checkedAt": "2026-10-08T16:31:28.820Z",
+  "testedUrl": "http://127.0.0.1:56604/",
+  "httpStatus": 200,
+  "canonical": "https://shiftmonitor1998.robloxwikihub.com/",
+  "robotsAllowed": true,
+  "indexAllowed": true,
+  "consoleErrors": 0,
+  "errors": [],
+  "links": "passed",
+  "linkScope": "internal only",
+  "brokenLinks": [],
+  "externalLinksNotChecked": [
+    "https://carldupuy.itch.io/shift-monitor-1998"
+  ],
+  "blockedExternalRequests": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 390,
+        "client": 390
+      },
+      "screenshot": {
+        "path": "quality/artifacts/home-390.png",
+        "sha256": "69490460cfc0126ff5967e63cdcbc1a58b4666ddfcb0ac50b27054743e4dbd13"
+      }
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 768,
+        "client": 768
+      },
+      "screenshot": {
+        "path": "quality/artifacts/home-768.png",
+        "sha256": "3cfe09c2aaf49801054478f215d5d18fbe5642f080a6d1408ae5334b47eccc5c"
+      }
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1024,
+        "client": 1024
+      },
+      "screenshot": {
+        "path": "quality/artifacts/home-1024.png",
+        "sha256": "9ca97dd72862a53fb8788320436ee39c3f2ef74dce57942c70db850e9284d559"
+      }
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "readable": true,
+      "sizes": {
+        "scroll": 1440,
+        "client": 1440
+      },
+      "screenshot": {
+        "path": "quality/artifacts/home-1440.png",
+        "sha256": "2b3d6102d55c1cc1045c2295b300ad40687d8e6e1bfc857576d84eee523f4e34"
+      }
+    }
+  ],
+  "interaction": "passed",
+  "contentReview": "supported",
+  "note": "Readability: separate independent review and final shared-font correction. Interaction: shared Header plus guide manual checklist, actual four-width tests; no game behavior inferred from local preview."
+}

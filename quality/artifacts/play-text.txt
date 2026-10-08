@@ -1,0 +1,10 @@
+Home
+Play the official browser game
+
+SHIFT_MONITOR: 1998 is a released HTML5 browser game by Carl Dev. Open the developer’s itch.io page to start its current version.
+
+Open on itch.io
+
+This companion does not host a copy of the game. If the game fails to load, check the developer’s page for current availability; refreshing may restart a session.
+
+Read the camera and purge controls

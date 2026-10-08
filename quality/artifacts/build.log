@@ -1,0 +1,38 @@
+
+> shift-monitor-1998@0.1.0 build:site
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/13) ...
+   Generating static pages (3/13) 
+   Generating static pages (6/13) 
+   Generating static pages (9/13) 
+ ✓ Generating static pages (13/13)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    185 B           101 kB
+├ ○ /_not-found                          138 B          87.5 kB
+├ ○ /about                               194 B          96.3 kB
+├ ○ /anomaly-guide                       194 B          96.3 kB
+├ ○ /camera-guide                        194 B          96.3 kB
+├ ○ /guide                               850 B           102 kB
+├ ○ /play                                194 B          96.3 kB
+├ ○ /privacy-policy                      194 B          96.3 kB
+├ ○ /survival-tips                       194 B          96.3 kB
+├ ○ /terms                               194 B          96.3 kB
+└ ○ /updates                             194 B          96.3 kB
++ First Load JS shared by all            87.4 kB
+  ├ chunks/117-bfbae8c272ff47dd.js       31.9 kB
+  ├ chunks/fd9d1056-99fd069f72f04521.js  53.6 kB
+  └ other shared chunks (total)          1.89 kB
+
+
+○  (Static)  prerendered as static content
+

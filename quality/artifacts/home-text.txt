@@ -1,0 +1,19 @@
+CARL DEV · HTML5 BROWSER GAME
+
+SHIFT_MONITOR: 1998
+
+Four CCTV feeds. A corruption meter. One purge button. Find the camera showing the anomaly before you try to clear it.
+
+Play on itch.io
+Controls & purge guide
+Browser observation of the developer’s game, 8 October 2026. Game visuals belong to Carl Dev.
+Warning text can be misleading
+
+In the browser build checked for this guide, the warning remained after switching away from the affected camera. The image, not that text alone, tells you which feed needs attention.
+
+See the observed example
+What this guide covers
+
+Camera labels, switching, selecting the right feed and the result of a successful purge. The guide records a particular browser build; it does not promise a winning rotation or a survival score.
+
+Sources and test scope

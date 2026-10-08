@@ -2,11 +2,14 @@
   "name": "shift-monitor-1998",
   "version": "0.1.0",
   "private": true,
+  "engines": { "node": "22.x" },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-reviewed.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:site": "next build",
+    "quality:gate": "node scripts/quality-gate.mjs ."
   },
   "dependencies": {
     "lucide-react": "^1.33.0",

@@ -1,0 +1,14 @@
+{
+  "project": "shift-monitor-1998",
+  "id": "itch",
+  "url": "https://carldupuy.itch.io/shift-monitor-1998",
+  "checkedAt": "2026-10-08T15:23:20.640Z",
+  "review": "pending",
+  "status": 200,
+  "finalUrl": "https://carldupuy.itch.io/shift-monitor-1998",
+  "contentType": "text/html",
+  "artifact": {
+    "path": "quality/artifacts/sources/itch.html",
+    "sha256": "85193e22ce23d91deef17976d3c794db01fabfbafefec899223ffadeded42d8a"
+  }
+}

@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     title: config.seo.siteTitle,
     description: config.seo.siteDescription,
     url: config.seo.baseUrl,
-    images: [{ url: "/og-default.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/observed-anomaly.png", width: 1280, height: 850 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${config.game.name} Guide`,
     description: config.seo.siteDescription,
-    images: ["/og-default.jpg"],
+    images: ["/images/observed-anomaly.png"],
   },
   robots: { index: true, follow: true },
 };
@@ -44,7 +44,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body className={`${inter.variable} ${mono.variable} min-h-screen bg-black text-green-50 antialiased`}>
+      <body className={`${inter.variable} ${mono.variable} min-h-screen bg-black font-sans text-green-50 antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

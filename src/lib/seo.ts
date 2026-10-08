@@ -56,7 +56,7 @@ export function buildVideoGameSchema() {
       applicationCategory: "Game",
       gamePlatform: config.game.platform,
       genre: config.game.genre,
-      publisher: {
+      author: {
         "@type": "Organization",
         name: config.game.developer,
       },
@@ -70,10 +70,5 @@ export function buildWebsiteSchema() {
     "@type": "WebSite",
     name: `${config.game.name} Guide`,
     url: config.seo.baseUrl,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${config.seo.baseUrl}/guide/?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 }

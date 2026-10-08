@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-08T16:32:26.786Z",
+  "checks": [
+    {
+      "width": 390,
+      "checklist": "passed",
+      "refreshClears": "passed",
+      "search": "passed",
+      "navigation": "passed",
+      "minimumBodyFont": 14
+    },
+    {
+      "width": 768,
+      "checklist": "passed",
+      "refreshClears": "passed",
+      "search": "passed",
+      "navigation": "passed",
+      "minimumBodyFont": 14
+    },
+    {
+      "width": 1024,
+      "checklist": "passed",
+      "refreshClears": "passed",
+      "search": "passed",
+      "navigation": "passed",
+      "minimumBodyFont": 14
+    },
+    {
+      "width": 1440,
+      "checklist": "passed",
+      "refreshClears": "passed",
+      "search": "passed",
+      "navigation": "passed",
+      "minimumBodyFont": 14
+    }
+  ],
+  "errors": [],
+  "notFound404": true,
+  "passed": true
+}

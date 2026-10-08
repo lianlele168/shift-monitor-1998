@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFT_MONITOR: 1998 // VHS CCTV SURVEILLANCE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; user-select: none; }
+
+        body {
+            background: #050505;
+            color: #20f060;
+            font-family: 'Share Tech Mono', monospace;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cctv-frame {
+            position: relative;
+            width: 96vw;
+            max-width: 1100px;
+            height: 92vh;
+            background: #080a08;
+            border: 4px solid #1a2e1e;
+            border-radius: 4px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.9);
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .crt-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%);
+            background-size: 100% 3px;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+        .screen-viewport {
+            position: relative;
+            flex-grow: 1;
+            background: #000;
+            border: 2px solid #20f060;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Osd Elements */
+        .osd-text {
+            position: absolute;
+            font-size: 1.4rem;
+            text-shadow: 2px 2px #000;
+            z-index: 5;
+            color: #20f060;
+        }
+
+        .osd-top-left { top: 15px; left: 20px; }
+        .osd-top-right { top: 15px; right: 20px; color: #ff3333; }
+        .osd-bottom-left { bottom: 15px; left: 20px; }
+        .osd-bottom-right { bottom: 15px; right: 20px; }
+
+        /* Camera Views Visual Simulation */
+        .feed-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            filter: contrast(130%) brightness(70%) sepia(20%);
+            transition: filter 0.1s;
+        }
+
+        .anomaly-entity {
+            display: none;
+            position: absolute;
+            width: 120px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(255,0,0,0.8) 0%, rgba(0,0,0,0.95) 80%);
+            border-radius: 40%;
+            filter: blur(4px);
+            box-shadow: 0 0 30px #ff0000;
+            animation: flicker 0.2s infinite;
+            cursor: pointer;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.7; transform: scale(0.98); }
+            50% { opacity: 1; transform: scale(1.02); }
+            100% { opacity: 0.8; transform: scale(1); }
+        }
+
+        /* Controls Panel */
+        .control-panel {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) 1.5fr;
+            gap: 10px;
+            height: 70px;
+        }
+
+        .btn-cam, .btn-action {
+            background: #0f1c12;
+            border: 2px solid #20f060;
+            color: #20f060;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.1s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-cam.active {
+            background: #20f060;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 0 15px #20f060;
+        }
+
+        .btn-action {
+            border-color: #ff3333;
+            color: #ff3333;
+            background: #200000;
+        }
+
+        .btn-action:hover {
+            background: #ff3333;
+            color: #000;
+            box-shadow: 0 0 15px #ff3333;
+        }
+
+        /* Meter */
+        .corruption-container {
+            position: absolute;
+            top: 55px;
+            left: 20px;
+            width: 200px;
+            height: 15px;
+            border: 1px solid #20f060;
+            z-index: 5;
+        }
+
+        .corruption-bar {
+            width: 0%;
+            height: 100%;
+            background: #ff3333;
+            transition: width 0.2s;
+        }
+
+        .game-over-screen {
+            display: none;
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #000;
+            color: #ff3333;
+            z-index: 30;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cctv-frame">
+        <div class="crt-overlay"></div>
+
+        <div class="screen-viewport" id="viewport">
+            <div class="osd-text osd-top-left">PLAY  &#9654;  <span id="vcr-time">00:00:00</span></div>
+            <div class="osd-text osd-top-right" id="signal-status">SIGNAL: STABLE</div>
+            <div class="osd-text osd-bottom-left" id="cam-label">CAM_01: MAIN HALLWAY</div>
+            <div class="osd-text osd-bottom-right">SURVIVAL: <span id="timer-val">0</span>s</div>
+
+            <div class="corruption-container">
+                <div class="corruption-bar" id="corrupt-bar"></div>
+            </div>
+
+            <div class="feed-container" id="feed-bg"></div>
+            <div class="anomaly-entity" id="entity" onclick="purgeAnomaly()"></div>
+
+            <div class="game-over-screen" id="gameover">
+                <div>SYSTEM CORRUPTED</div>
+                <div style="font-size: 1.2rem; color: #fff; margin-top: 15px;">SIGNAL LOST AT <span id="final-score">0</span> SECONDS</div>
+                <button class="btn-cam" style="margin-top: 25px; padding: 10px 20px; background: #20f060; color:#000;" onclick="restartGame()">RESTART SYSTEM</button>
+            </div>
+        </div>
+
+        <div class="control-panel">
+            <button class="btn-cam active" id="btn-cam1" onclick="switchCam(1)">CAM 01<small>HALLWAY</small></button>
+            <button class="btn-cam" id="btn-cam2" onclick="switchCam(2)">CAM 02<small>STORAGE</small></button>
+            <button class="btn-cam" id="btn-cam3" onclick="switchCam(3)">CAM 03<small>OFFICE</small></button>
+            <button class="btn-cam" id="btn-cam4" onclick="switchCam(4)">CAM 04<small>GENERATOR</small></button>
+            <button class="btn-action" onclick="purgeAnomaly()">⚡ PURGE SIGNAL<small>FIX ANOMALY</small></button>
+        </div>
+    </div>
+
+    <script>
+        let currentCam = 1;
+        let anomalyCam = 0;
+        let corruption = 0;
+        let survivalTime = 0;
+        let gameActive = true;
+        let audioCtx = null;
+
+        const camNames = {
+            1: "CAM_01: MAIN HALLWAY",
+            2: "CAM_02: STORAGE ROOM",
+            3: "CAM_03: SECURITY OFFICE",
+            4: "CAM_04: GENERATOR BAY"
+        };
+
+        const bgColors = {
+            1: "radial-gradient(circle, #1a261c 0%, #050a06 100%)",
+            2: "radial-gradient(circle, #26221a 0%, #0a0805 100%)",
+            3: "radial-gradient(circle, #1a1e26 0%, #05060a 100%)",
+            4: "radial-gradient(circle, #261a1a 0%, #0a0505 100%)"
+        };
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+        }
+
+        function playBeep(freq = 440, type = 'sine', duration = 0.1) {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = type;
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + duration);
+        }
+
+        function switchCam(camNum) {
+            initAudio();
+            playBeep(800, 'square', 0.05);
+            currentCam = camNum;
+            
+            document.querySelectorAll('.btn-cam').forEach((b, i) => {
+                b.classList.toggle('active', i + 1 === camNum);
+            });
+
+            document.getElementById('cam-label').innerText = camNames[camNum];
+            document.getElementById('feed-bg').style.background = bgColors[camNum];
+
+            updateEntityVisibility();
+        }
+
+        function spawnAnomaly() {
+            if (!gameActive || anomalyCam !== 0) return;
+            anomalyCam = Math.floor(Math.random() * 4) + 1;
+            
+            const entity = document.getElementById('entity');
+            entity.style.top = `${20 + Math.random() * 50}%`;
+            entity.style.left = `${20 + Math.random() * 50}%`;
+
+            updateEntityVisibility();
+            playBeep(150, 'sawtooth', 0.3);
+        }
+
+        function updateEntityVisibility() {
+            const entity = document.getElementById('entity');
+            if (anomalyCam === currentCam && anomalyCam !== 0) {
+                entity.style.display = 'block';
+                document.getElementById('signal-status').innerText = 'WARNING: ANOMALY DETECTED';
+                document.getElementById('signal-status').style.color = '#ff3333';
+            } else {
+                entity.style.display = 'none';
+                if (anomalyCam === 0) {
+                    document.getElementById('signal-status').innerText = 'SIGNAL: STABLE';
+                    document.getElementById('signal-status').style.color = '#20f060';
+                }
+            }
+        }
+
+        function purgeAnomaly() {
+            initAudio();
+            if (anomalyCam === currentCam && anomalyCam !== 0) {
+                playBeep(1200, 'sine', 0.2);
+                anomalyCam = 0;
+                corruption = Math.max(0, corruption - 15);
+                updateEntityVisibility();
+            } else {
+                playBeep(100, 'square', 0.1);
+            }
+        }
+
+        // Loop principal (1 seconde)
+        setInterval(() => {
+            if (!gameActive) return;
+
+            survivalTime++;
+            document.getElementById('timer-val').innerText = survivalTime;
+
+            // Gestion de l'horloge VCR
+            let hrs = String(Math.floor(survivalTime / 3600)).padStart(2, '0');
+            let mins = String(Math.floor((survivalTime % 3600) / 60)).padStart(2, '0');
+            let secs = String(survivalTime % 60).padStart(2, '0');
+            document.getElementById('vcr-time').innerText = `${hrs}:${mins}:${secs}`;
+
+            // Chance d'apparition d'une anomalie
+            if (anomalyCam === 0 && Math.random() < 0.35) {
+                spawnAnomaly();
+            }
+
+            // Progression de la corruption si une anomalie est présente
+            if (anomalyCam !== 0) {
+                corruption += 12;
+                document.getElementById('corrupt-bar').style.width = `${Math.min(100, corruption)}%`;
+
+                if (corruption >= 100) {
+                    triggerGameOver();
+                }
+            } else {
+                corruption = Math.max(0, corruption - 2);
+                document.getElementById('corrupt-bar').style.width = `${corruption}%`;
+            }
+        }, 1000);
+
+        function triggerGameOver() {
+            gameActive = false;
+            playBeep(60, 'sawtooth', 0.8);
+            document.getElementById('gameover').style.display = 'flex';
+            document.getElementById('final-score').innerText = survivalTime;
+        }
+
+        function restartGame() {
+            survivalTime = 0;
+            corruption = 0;
+            anomalyCam = 0;
+            gameActive = true;
+            document.getElementById('gameover').style.display = 'none';
+            document.getElementById('corrupt-bar').style.width = '0%';
+            switchCam(1);
+        }
+
+        switchCam(1);
+    </script>
+</body>
+</html><script defer src="https://static.itch.io/htmlgame.js" type="text/javascript"></script>

@@ -1,8 +1,8 @@
 {
   "path": "/updates/",
-  "codeFingerprint": "a3f54de5b5874b493d8c872854c77d5f37bc8f71275f308ca2b33bc669e4f1db",
-  "checkedAt": "2026-10-08T16:31:38.918Z",
-  "testedUrl": "http://127.0.0.1:56604/updates/",
+  "codeFingerprint": "3b034f2e2735bd9305c76203e24606f47d13895fb5dcf08c4d851543fcd6808f",
+  "checkedAt": "2026-10-08T16:45:59.013Z",
+  "testedUrl": "http://127.0.0.1:56770/updates/",
   "httpStatus": 200,
   "canonical": "https://shiftmonitor1998.robloxwikihub.com/updates/",
   "robotsAllowed": true,
@@ -67,11 +67,11 @@
       },
       "screenshot": {
         "path": "quality/artifacts/updates-1440.png",
-        "sha256": "6b45f4f7f167665d3508204182f0f699eb870f9029a7224113f80b8f5a0847e3"
+        "sha256": "e580dd28a10ab301196abca63afb83a059d4f57df9b0cabc5de3643337b7a46a"
       }
     }
   ],
   "interaction": "passed",
   "contentReview": "supported",
-  "note": "Readability: separate independent review and final shared-font correction. Interaction: shared Header plus guide manual checklist, actual four-width tests; no game behavior inferred from local preview."
+  "note": "Gate-only portability repair. All ten main texts unchanged. 39/40 screenshots byte-identical to previously inspected captures; root directly inspected changed updates-1440. Current four-width checklist/search/menu/refresh browser checks passed; see gate-revalidation.md."
 }

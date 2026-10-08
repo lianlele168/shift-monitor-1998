@@ -55,3 +55,13 @@ Reviewer `/root/autonomous_workflow` independently checked the final export at c
 - The other final differences are build reproducibility and isolation: Node engine/Linux dependency lock consistency, npm ci in Vercel, and excluding quality backups from TypeScript compilation. They add no game claims. The controller's failed build correctly prevented preview until repaired and rebuilt.
 
 No unresolved factual or visual blocker remains in the reviewed local version. This independently reviewed version may proceed through the conditional release preflight and actual production checks. Google indexing remains unverified.
+
+## Generated-file gate correction — independently revalidated 16:49 UTC
+
+The only implementation difference from the preceding reviewed commit is the gate fingerprint filter: exclude generated `*.tsbuildinfo` and the root `next-env.d.ts`. Application declarations, nested `src/**/next-env.d.ts`, compiler configuration, lockfiles and actual site code remain included. This reviewer read the exact four-line diff and the real Git-archive regressions. It fixes a local/CI fingerprint inconsistency; it does not loosen content/source evidence requirements.
+
+Read the retained Linux npm ci/build logs and clean Git candidate fingerprint: the 38-file archive and local source both identify `3b034f2e2735bd9305c76203e24606f47d13895fb5dcf08c4d851543fcd6808f`. The current controller preview is `7d0e199f-693e-4cb0-ab63-156ecc92d7ef`.
+
+At 2026-10-08T16:49:33.641Z this reviewer independently compared current captured main text and screenshot hashes against the previous reviewed Git HEAD: all ten page main texts were unchanged, 39 of 40 images were byte-identical, and only `updates-1440.png` changed. Opened and visually inspected that new image: complete source/observation paragraphs, correction explanation, footer, font and spacing are present and legible, with no new defect. Existing fact/source review dates remain appropriate because those claims did not change. Read the repeated four-width interaction report dated 16:45:59 UTC; it records the builder's executed checks, not new gameplay observation by this reviewer.
+
+No remaining blocker was found for this updated local version. The new code fingerprint and current collection can be recorded by the controller; release remains conditional on clean committed evidence, actual provider success and formal-domain checks.

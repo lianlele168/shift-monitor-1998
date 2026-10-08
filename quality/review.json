@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "codeFingerprint": "3b034f2e2735bd9305c76203e24606f47d13895fb5dcf08c4d851543fcd6808f",
+  "codeFingerprint": "84b7065a525ddb77e20bd12f5d85b85c811e0843efc414bea638cee447eb4469",
   "site": {
     "baseUrl": "https://shiftmonitor1998.robloxwikihub.com",
     "officialUrl": "https://carldupuy.itch.io/shift-monitor-1998",
@@ -62,10 +62,10 @@
       "id": "interactions",
       "kind": "observation",
       "url": "https://shiftmonitor1998.robloxwikihub.com",
-      "checkedAt": "2026-10-08T16:45:59.651Z",
+      "checkedAt": "2026-10-08T16:59:19.688Z",
       "artifact": {
         "path": "quality/artifacts/interactions.json",
-        "sha256": "8536aca0212bb433d33937a301c1f12262ba26845c27eb2ce9b6c81688ea9e55"
+        "sha256": "eb2ba1581b78d7b8a0f65b4b2d229b6e459b04a7b852e4094c92c3b831da30d7"
       }
     },
     {
@@ -277,11 +277,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/home.html",
-        "sha256": "f162e64004d939d33deb0cbced006d8e510f19bd93a5ed6b331c8522d8c2aa30"
+        "sha256": "f1779ac843978e70f1f4dc35fb25fe8d9e1b1b8f2bc666603eaeafd1192d869d"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/home-technical.json",
-        "sha256": "cccaee80b1ab51dfc5450cbbd5327dcfbd66efab62e6a7c0aaced820a728cdbd"
+        "sha256": "be4be753c149f86b7513a345964815d165b592d788e62885593ce008d71a1ec2"
       }
     },
     {
@@ -307,11 +307,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/about.html",
-        "sha256": "fc411bfc7e4037b8516dc01e47eb0796cd15ab52aa9ec14d3d0a48a79685c64b"
+        "sha256": "72beb796bb1633e0f26cf01077ae9756fc436a83a6e208225e34cc70fa12fec2"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/about-technical.json",
-        "sha256": "b6e68642dcf8e34e33e1beeba06f4251711c3d113e2513b4bd0d914ba204717f"
+        "sha256": "06fe07944b8abb2e26b43ca4c65c9f54c08383a3b124c007440e44521bc53050"
       }
     },
     {
@@ -338,11 +338,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/anomaly-guide.html",
-        "sha256": "3a05a003dc9f8369b09e0b4008d7778fe26c050484dc734f1171a3057749129d"
+        "sha256": "f57a21b1c5b7a12ec4031ff772e6c2879ba2bec18264fdba0739c0f39aaa5b6b"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/anomaly-guide-technical.json",
-        "sha256": "a3dd59fe969cea3a5720287c87a28bf3a0a108ab23729701afdc01ab274fc98c"
+        "sha256": "cbb2a70355b154a77ba9f315e2fad268822374df2e68b42f9c59d806efd5b46e"
       }
     },
     {
@@ -369,11 +369,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/camera-guide.html",
-        "sha256": "93b3a07b4b0d084fc1300ea858a2d860c8e1374889e8c6d2c6c24a86c4fb9307"
+        "sha256": "7211eb16ef7fec0508ea6ecb36ee2019ac400619408d051ce9fa8d4986f170f7"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/camera-guide-technical.json",
-        "sha256": "bbcc9a8efa6098b0f349ffad4d088e5254ea60f41e2f5eb6e5969f48fe801bf8"
+        "sha256": "1f8cfb0bd2a652da38217b07163f5d2fe89883a564c919a1ab51dae107b418c7"
       }
     },
     {
@@ -405,11 +405,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/guide.html",
-        "sha256": "de3b78c2921e96b2c038396101c136deb95001ea76e45dc67f499f4d86f75182"
+        "sha256": "28cb5c75cb13048a048ac4d4a54ce1ca9190b677e8db3c36b5450d7a85930b8c"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/guide-technical.json",
-        "sha256": "da7b53f92666d9e5917018702343ae24d3a339d7020a4cdaaa758cf3dec4cff9"
+        "sha256": "1ad0659458b75bae56e4df7c76527f2221a031901d41c0f467e2089959a23ed8"
       }
     },
     {
@@ -435,11 +435,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/play.html",
-        "sha256": "cc8f10dd2485974c2d86b0aa11e50d7ecbfe9e390cb80c1fa726087f87f89115"
+        "sha256": "99acee4cc236c861afc40ce08bd10a6f5ea8c114eb11de7e619d21d335a22f05"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/play-technical.json",
-        "sha256": "6163965380ad0659061054cd2b29ad6d20eecf01cbfcb485bd88a0998ec2ffbe"
+        "sha256": "8000aa72637ac5185aa07e5739d1e27c193b62a8d3130c299cc96b6c73ca16f5"
       }
     },
     {
@@ -466,11 +466,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/privacy-policy.html",
-        "sha256": "73a848d4d3173d873c0fa01740863d541fb3bd91c034c9181fcedc872142490b"
+        "sha256": "4f70c2f3f0be4824d8f058c47d199f539e081d942f898cb8595f5dd5de281ff7"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/privacy-policy-technical.json",
-        "sha256": "533a13d92abbc30025ad895e9ae7079663eb9e047ab0a8fa535e2fe84416e948"
+        "sha256": "c6a1438e034682639f7dbe9704658b2b89f959f861d4e61036a98b3fa4c604d7"
       }
     },
     {
@@ -497,11 +497,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/survival-tips.html",
-        "sha256": "536ba4acfef546a288b3c4ecd2800c0277e97ac4f915ed141ff76e82815544a6"
+        "sha256": "e327a001596b96df2c96493ee2f4fd7fb0be1fff47acb7feadb351bc11c470e3"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/survival-tips-technical.json",
-        "sha256": "204cdb1c2877db671fec30bb0877706f06c95dba6687814c0f1ff08d1853d628"
+        "sha256": "6535ed40045cda5891369ed9a05ef08300a54a4cba97f5b4e10782e614fd8eb9"
       }
     },
     {
@@ -528,11 +528,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/terms.html",
-        "sha256": "ad94e55889b7049adf8a11800f0340bfa91e1e00ed57580e3a7310e97c71dfb3"
+        "sha256": "b441b9a85400bc3994fe48323ad946c234380880480b12b7e75ae6a23e2ff389"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/terms-technical.json",
-        "sha256": "961bd1187f3066dd1615fbbac1b2e563c3cf67401e3ce01cb2baf0ca7935e56a"
+        "sha256": "a68726abe7bbf7e26bf0d772fe2c2438f55a3c1c56303ae3583941a2b07aa6c5"
       }
     },
     {
@@ -564,11 +564,11 @@
       },
       "renderedArtifact": {
         "path": "quality/artifacts/updates.html",
-        "sha256": "b80f6f797575ab8a7017f02c18b156a42ef77aaacf34720d4e7f1aef6edae390"
+        "sha256": "8f8b3321df1f085b6a8b9fafe24f6f418c3275b588808f0206e6ec201f35852e"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/updates-technical.json",
-        "sha256": "a8e2d0db41f23cfba44b9a2a944558dfca0bf4d62a276e90ee6a71e0b2950655"
+        "sha256": "ab1ae2cad4962abc8328aeba971362b8f95290ac946e2c329f4d13dc9d45faa9"
       }
     }
   ],
@@ -586,11 +586,11 @@
   },
   "skillRunArtifact": {
     "path": "quality/skill-run.md",
-    "sha256": "77c4f4646d8b742a807e3b76aa3f98484af9133cc0b255c19ceeac68e12ccd7a"
+    "sha256": "98bd1d7c9100c97463b86787800f123a4ee03b04eccb8488f761814a3b7bf4b0"
   },
   "buildArtifact": {
     "path": "quality/artifacts/build.log",
-    "sha256": "bd427e52747ab5ee21c892b6caa5d0a02651c4a24838891ac1bb93698f194067"
+    "sha256": "10ea09c2a66bde330b0257b986a032485f43bfff50f42dc0ce035deaa442297a"
   },
   "buildStatus": "passed",
   "unresolved": []

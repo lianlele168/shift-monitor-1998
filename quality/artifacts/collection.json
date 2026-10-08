@@ -1,6 +1,6 @@
 {
-  "codeFingerprint": "3b034f2e2735bd9305c76203e24606f47d13895fb5dcf08c4d851543fcd6808f",
-  "checkedAt": "2026-10-08T16:45:59.024Z",
+  "codeFingerprint": "84b7065a525ddb77e20bd12f5d85b85c811e0843efc414bea638cee447eb4469",
+  "checkedAt": "2026-10-08T16:59:23.886Z",
   "routeInventoryArtifact": {
     "path": "quality/artifacts/routes.json",
     "sha256": "34739f63d6ca95b2b40af38c4d055106b194bca738be50c8dfa83359b7f502b1"
@@ -15,11 +15,11 @@
       "title": "SHIFT_MONITOR: 1998 — Camera Controls & Purge Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/home.html",
-        "sha256": "f162e64004d939d33deb0cbced006d8e510f19bd93a5ed6b331c8522d8c2aa30"
+        "sha256": "f1779ac843978e70f1f4dc35fb25fe8d9e1b1b8f2bc666603eaeafd1192d869d"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/home-technical.json",
-        "sha256": "96b4896227b5066474639ce1cfde4945c88ca8e908a9a36abcc8dd1bf6133063"
+        "sha256": "16be9171d10ca1e53c5cc0901e8a1a7f773d87323814d128807395ccc514d6b0"
       },
       "issues": {
         "brokenLinks": [],
@@ -32,11 +32,11 @@
       "title": "About this guide | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/about.html",
-        "sha256": "fc411bfc7e4037b8516dc01e47eb0796cd15ab52aa9ec14d3d0a48a79685c64b"
+        "sha256": "72beb796bb1633e0f26cf01077ae9756fc436a83a6e208225e34cc70fa12fec2"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/about-technical.json",
-        "sha256": "ae1485b32bc61dfd43419f4612d2e58c98263b5023eaae0178cd09a535f49a6a"
+        "sha256": "4141ee0a879e4f6eb7fae78a13ca33142cea2f72b645edcfe2bfada9e7d3d8a8"
       },
       "issues": {
         "brokenLinks": [],
@@ -49,11 +49,11 @@
       "title": "Anomaly guide moved | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/anomaly-guide.html",
-        "sha256": "3a05a003dc9f8369b09e0b4008d7778fe26c050484dc734f1171a3057749129d"
+        "sha256": "f57a21b1c5b7a12ec4031ff772e6c2879ba2bec18264fdba0739c0f39aaa5b6b"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/anomaly-guide-technical.json",
-        "sha256": "e71340ca2b60cd938df2dccb20504eb82b2147e860bfa1956c4dcfaf2847dc78"
+        "sha256": "a4e7a983ba4c6f345bc951123e1fb6684820dbc8de2d2869463cf0029c726ec7"
       },
       "issues": {
         "brokenLinks": [],
@@ -66,11 +66,11 @@
       "title": "Camera guide moved | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/camera-guide.html",
-        "sha256": "93b3a07b4b0d084fc1300ea858a2d860c8e1374889e8c6d2c6c24a86c4fb9307"
+        "sha256": "7211eb16ef7fec0508ea6ecb36ee2019ac400619408d051ce9fa8d4986f170f7"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/camera-guide-technical.json",
-        "sha256": "c5a0a5256ffa87815188fb5b6f9744832c077443a07283eb0b2b1ccce95b8601"
+        "sha256": "1e89852b288eea671991b35469c15b17b57e7f98054f44957ec10938c10936da"
       },
       "issues": {
         "brokenLinks": [],
@@ -83,11 +83,11 @@
       "title": "Camera controls and the persistent anomaly warning | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/guide.html",
-        "sha256": "de3b78c2921e96b2c038396101c136deb95001ea76e45dc67f499f4d86f75182"
+        "sha256": "28cb5c75cb13048a048ac4d4a54ce1ca9190b677e8db3c36b5450d7a85930b8c"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/guide-technical.json",
-        "sha256": "ae61881031ce2daf20c8aaa8f097bee99a494274d6d4d81da7261fb3968dfc75"
+        "sha256": "04ed8512b8e72a68a91aa2d9ce33370a7da44e3eb9af5939db6d623b872799d0"
       },
       "issues": {
         "brokenLinks": [],
@@ -100,11 +100,11 @@
       "title": "Play the official browser game | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/play.html",
-        "sha256": "cc8f10dd2485974c2d86b0aa11e50d7ecbfe9e390cb80c1fa726087f87f89115"
+        "sha256": "99acee4cc236c861afc40ce08bd10a6f5ea8c114eb11de7e619d21d335a22f05"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/play-technical.json",
-        "sha256": "bf957c8e32235a29e56f7d53e221fda4be85af65947eef52e6dbb5e0dafe444b"
+        "sha256": "b0495ee15ee330bf87a1d0285f89eefa4a81a31847f4e48188004ec005d1b98c"
       },
       "issues": {
         "brokenLinks": [],
@@ -117,11 +117,11 @@
       "title": "Privacy | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/privacy-policy.html",
-        "sha256": "73a848d4d3173d873c0fa01740863d541fb3bd91c034c9181fcedc872142490b"
+        "sha256": "4f70c2f3f0be4824d8f058c47d199f539e081d942f898cb8595f5dd5de281ff7"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/privacy-policy-technical.json",
-        "sha256": "310f2c2d187412e8783896ec546ff18f60d67ae9407d64a9892ad2338d04a441"
+        "sha256": "7fecdca027ab31fc46d305341903e59fe7993e45b7b597334b1b7fc3b80c3fb1"
       },
       "issues": {
         "brokenLinks": [],
@@ -134,11 +134,11 @@
       "title": "Survival advice corrected | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/survival-tips.html",
-        "sha256": "536ba4acfef546a288b3c4ecd2800c0277e97ac4f915ed141ff76e82815544a6"
+        "sha256": "e327a001596b96df2c96493ee2f4fd7fb0be1fff47acb7feadb351bc11c470e3"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/survival-tips-technical.json",
-        "sha256": "0b6ee6c698f9af6284ee7d0005552020cf089ce8a273100368c9ff8eb5010029"
+        "sha256": "077390721257dfd911614032e41bd4c34dc5e0784159c3c5fe4fac7869efbc42"
       },
       "issues": {
         "brokenLinks": [],
@@ -151,11 +151,11 @@
       "title": "Terms | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/terms.html",
-        "sha256": "ad94e55889b7049adf8a11800f0340bfa91e1e00ed57580e3a7310e97c71dfb3"
+        "sha256": "b441b9a85400bc3994fe48323ad946c234380880480b12b7e75ae6a23e2ff389"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/terms-technical.json",
-        "sha256": "007fdf16b194d5b07cc40966d4baba20addf313594a388cc6abf62493f157700"
+        "sha256": "60ca558c04af3463b12c4c5d87f69dd3cc399e1defe2bc28676de0bb3afdd26a"
       },
       "issues": {
         "brokenLinks": [],
@@ -168,11 +168,11 @@
       "title": "Sources and browser observations | SHIFT_MONITOR: 1998 Guide",
       "renderedArtifact": {
         "path": "quality/artifacts/updates.html",
-        "sha256": "b80f6f797575ab8a7017f02c18b156a42ef77aaacf34720d4e7f1aef6edae390"
+        "sha256": "8f8b3321df1f085b6a8b9fafe24f6f418c3275b588808f0206e6ec201f35852e"
       },
       "technicalArtifact": {
         "path": "quality/artifacts/updates-technical.json",
-        "sha256": "1be881d234bb096f8eca2b0191d95ea291353efd9e7f1a7b047177df788c29db"
+        "sha256": "1ada70f85f69f65ec9d29c13bd07b098391edb65f6d580fa709286245bd667b8"
       },
       "issues": {
         "brokenLinks": [],

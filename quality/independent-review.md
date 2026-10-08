@@ -65,3 +65,11 @@ Read the retained Linux npm ci/build logs and clean Git candidate fingerprint: t
 At 2026-10-08T16:49:33.641Z this reviewer independently compared current captured main text and screenshot hashes against the previous reviewed Git HEAD: all ten page main texts were unchanged, 39 of 40 images were byte-identical, and only `updates-1440.png` changed. Opened and visually inspected that new image: complete source/observation paragraphs, correction explanation, footer, font and spacing are present and legible, with no new defect. Existing fact/source review dates remain appropriate because those claims did not change. Read the repeated four-width interaction report dated 16:45:59 UTC; it records the builder's executed checks, not new gameplay observation by this reviewer.
 
 No remaining blocker was found for this updated local version. The new code fingerprint and current collection can be recorded by the controller; release remains conditional on clean committed evidence, actual provider success and formal-domain checks.
+
+## Provider JSON-format equivalence — independently revalidated 17:04 UTC
+
+Read the precise gate-only change and its two regression cases. Only root `vercel.json` is parsed/stringified for fingerprinting, matching the observed provider serialization; configuration values and key order remain significant. Other JSON remains byte-sensitive under the existing text newline handling, invalid JSON does not receive the new normalization, and changing buildCommand still invalidates evidence. This is a format-equivalence fix, not permission to bypass npm run build or substitute different configuration values.
+
+At 2026-10-08T17:04:46.083Z this reviewer independently read current captured HTML and compared it with previous reviewed Git HEAD: all ten main texts and all forty screenshot bytes are identical. There is no new visual or factual difference to pretend to review again. Read the builder's fresh 16:59:19 UTC interaction report and `quality/provider-format-revalidation.md`; no gameplay-source date was refreshed.
+
+No unresolved blocker remains for local version `84b7065a525ddb77e20bd12f5d85b85c811e0843efc414bea638cee447eb4469`. Advance through the real committed-snapshot preflight and actual provider/public verification; this statement does not itself establish a production result.

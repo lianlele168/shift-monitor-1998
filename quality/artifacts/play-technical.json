@@ -1,8 +1,8 @@
 {
   "path": "/play/",
-  "codeFingerprint": "3b034f2e2735bd9305c76203e24606f47d13895fb5dcf08c4d851543fcd6808f",
-  "checkedAt": "2026-10-08T16:45:54.000Z",
-  "testedUrl": "http://127.0.0.1:56770/play/",
+  "codeFingerprint": "84b7065a525ddb77e20bd12f5d85b85c811e0843efc414bea638cee447eb4469",
+  "checkedAt": "2026-10-08T16:59:18.056Z",
+  "testedUrl": "http://127.0.0.1:54741/play/",
   "httpStatus": 200,
   "canonical": "https://shiftmonitor1998.robloxwikihub.com/play/",
   "robotsAllowed": true,
@@ -72,5 +72,5 @@
   ],
   "interaction": "passed",
   "contentReview": "supported",
-  "note": "Gate-only portability repair. All ten main texts unchanged. 39/40 screenshots byte-identical to previously inspected captures; root directly inspected changed updates-1440. Current four-width checklist/search/menu/refresh browser checks passed; see gate-revalidation.md."
+  "note": "Vercel config formatting-only gate correction; all ten main texts and forty screenshots identical to previously reviewed captures. Fresh four-width interactions passed. See provider-format-revalidation.md."
 }

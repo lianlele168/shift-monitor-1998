@@ -1,4 +1,4 @@
-{"startedAt":"2026-10-08T16:43:57.853Z","executable":"C:\\Program Files\\nodejs\\node.exe","args":["C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js","run","build:site"],"cwd":"D:\\AI建站\\shift-monitor-1998"}
+{"startedAt":"2026-10-08T16:58:15.829Z","executable":"C:\\Program Files\\nodejs\\node.exe","args":["C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js","run","build:site"],"cwd":"D:\\AI建站\\shift-monitor-1998"}
 
 > shift-monitor-1998@0.1.0 build:site
 > next build
@@ -38,4 +38,4 @@ Route (app)                              Size     First Load JS
 ○  (Static)  prerendered as static content
 
 
-{"finishedAt":"2026-10-08T16:44:13.210Z","exitCode":0,"signal":null,"error":null}
+{"finishedAt":"2026-10-08T16:58:31.900Z","exitCode":0,"signal":null,"error":null}
